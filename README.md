@@ -1,6 +1,5 @@
-###### Before Running this Project
- 1.  git clone https://github.com/bitlucky/CRUD-app.git
- 2. Install npm packages using 'npm install' command.
- 3. type "node server.js" (without qoutes in terminal)
-
+###### In the terminal 
+1.  git clone https://github.com/bitlucky/CRUD-app.git
+2. npm install 
+3. node server.js
 #### THANK YOU 
