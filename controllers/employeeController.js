@@ -15,7 +15,6 @@ router.post('/', (req, res) => {
         else
         updateRecord(req, res);
 });
-/*
 
 function insertRecord(req, res) {
     var employee = new Employee();
@@ -106,5 +105,5 @@ router.get('/delete/:id', (req, res) => {
         else { console.log('Error in employee delete :' + err); }
     });
 });
-*/
+
 module.exports = router;
