@@ -37,7 +37,7 @@ function insertRecord(req, res) {
             else
                 console.log('Error during record insertion : ' + err);
         }
-    alert(JSON.stringify(employee));
+    
     });
     
 }
