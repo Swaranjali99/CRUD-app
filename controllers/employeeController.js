@@ -17,11 +17,12 @@ router.post('/', (req, res) => {
 });
 
 function insertRecord(req, res) {
-    var employee = new Employee();
+    let employee = new Employee();
     employee.fullName = req.body.fullName;
     employee.email = req.body.email;
     employee.mobile = req.body.mobile;
     employee.city = req.body.city;
+    employee.imgURL = req.body.imgURL;
     employee.save((err, doc) => {
         if (!err)
             res.redirect('employee/list');
@@ -36,7 +37,9 @@ function insertRecord(req, res) {
             else
                 console.log('Error during record insertion : ' + err);
         }
+    alert(JSON.stringify(employee));
     });
+    
 }
 
 function updateRecord(req, res) {
